@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+const $ = jQuery = global.$ = global.jQuery = require( "jquery" );
 
 class Home extends React.Component {
 	constructor( props ) {
@@ -19,6 +20,11 @@ class Home extends React.Component {
 				<Navigation />
 				<div className="container-fluid" id="main">
 					<h1>Home</h1>
+					<div ref={(div) => {	$(div).tuiEditor({
+									initialEditType: 'markdown',
+									previewStyle: 'vertical',
+									eight: 300
+							});}}></div>
 					<span>{this.state.text}</span>
 					<form>
 						<div className="input-group">
@@ -33,6 +39,7 @@ class Home extends React.Component {
 				</div>
 			</div>
 		);
+
 	}
 }
 

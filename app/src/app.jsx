@@ -6,12 +6,12 @@ import Settings from "./src/components/Settings";
 
 const $ = jQuery = global.$ = global.jQuery = require( "jquery" );
 require( "bootstrap" );
-
 document.addEventListener( "DOMContentLoaded", () => {
 	ReactDOM.render( (
 		<Router>
 			<Route path="/" component={ Home } />
 			<Route path="/settings" component={ Settings } />
+
 		</Router>
 	), document.getElementById( "app" ) );
 

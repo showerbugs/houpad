@@ -1,0 +1,20 @@
+{
+  "name": "electron-starter-kit",
+  "description": "Electron Starter Kit to get you started with Electron",
+  "main": "app/main.js",
+  "authors": [
+    "David Neal <david@reverentgeek.com> (http://reverentgeek.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/LeanKit-Labs/electron-starter-kit",
+  "dependencies": {
+    "tuiEditor": "https://github.com/nhnent/tui.editor.git#0.10.12"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
